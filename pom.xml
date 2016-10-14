@@ -232,86 +232,9 @@
 	</build>
 
 	<profiles>
-		<!-- GlassFish specific version of build -->
-		<profile>
-			<id>glassfish</id>
-<!-- 			<activation> -->
-<!-- 				<activeByDefault>true</activeByDefault> -->
-<!-- 			</activation> -->
-<!-- 			<dependencies> -->
-<!-- 				<dependency> -->
-<!-- 					<groupId>org.jboss.arquillian.container</groupId> -->
-<!-- 					<artifactId>arquillian-glassfish-remote-3.1</artifactId> -->
-<!-- 					<version>1.0.0.CR4</version> -->
-<!-- 					<scope>test</scope> -->
-<!-- 				</dependency> -->
-<!-- 			</dependencies> -->
-<!-- 			<build> -->
-<!-- 				<plugins> -->
-<!-- 					<plugin> -->
-<!-- 						<groupId>org.codehaus.cargo</groupId> -->
-<!-- 						<artifactId>cargo-maven2-plugin</artifactId> -->
-<!-- 						<version>1.4.14</version> -->
-<!-- 						<configuration> -->
-<!-- 							<container> -->
-<!-- 								<containerId>glassfish4x</containerId> -->
-<!-- 								<zipUrlInstaller> -->
-<!-- 									<url>http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip</url> -->
-<!-- 								</zipUrlInstaller> -->
-<!-- 							</container> -->
-<!-- 							<properties> -->
-<!-- 								<context>cargo-tracker</context> -->
-<!-- 							</properties> -->
-<!-- 						</configuration> -->
-<!-- 					</plugin> -->
-<!-- 				</plugins> -->
-<!-- 			</build> -->
-		</profile>
-
-		<!-- WebLogic Profile -->
-		<profile>
-			<id>weblogic</id>
-		</profile>
-
-		<!-- Wildfly specific version of build -->
-		<profile>
+	
+			<profile>
 			<id>wildfly</id>
-<!-- 			<activation> -->
-<!-- 				<activeByDefault>true</activeByDefault> -->
-<!-- 			</activation> -->
-<!-- 			<dependencies> -->
-<!-- 				<dependency> -->
-<!-- 					<groupId>org.wildfly.arquillian</groupId> -->
-<!-- 					<artifactId>wildfly-arquillian-container-remote</artifactId> -->
-<!-- 					<version>1.1.0.Final</version> -->
-<!-- 					<version>2.0.0.Final</version> -->
-<!-- 					<scope>test</scope> -->
-<!-- 				</dependency> -->
-<!-- 			</dependencies> -->
-<!-- 			<build> -->
-<!-- 				<plugins> -->
-<!-- 					<plugin> -->
-<!-- 						<groupId>org.codehaus.cargo</groupId> -->
-<!-- 						<artifactId>cargo-maven2-plugin</artifactId> -->
-<!-- 						<version>1.4.19</version> -->
-<!-- 						<configuration> -->
-<!-- 							<container> -->
-<!-- 								<containerId>windfly10x</containerId> -->
-<!-- 								<zipUrlInstaller> -->
-<!-- 									<url>http://download.jboss.org/wildfly/10.1.0.Final/wildfly-10.1.0.Final.zip</url> -->
-<!-- 								</zipUrlInstaller> -->
-<!-- 							</container> -->
-<!-- 							<properties> -->
-<!-- 								<context>cargo-tracker</context> -->
-<!-- 							</properties> -->
-<!-- 						</configuration> -->
-<!-- 					</plugin> -->
-<!-- 				</plugins> -->
-<!-- 			</build> -->
-		</profile>
-
-		<profile>
-			<id>wildfly2</id>
 			<dependencies>
 				<dependency>
 					<groupId>org.glassfish.jersey.containers</groupId>
@@ -407,5 +330,48 @@
 				</plugins>
 			</build>
 		</profile>
+	
+		<!-- GlassFish specific version of build -->
+		<profile>
+			<id>glassfish</id>
+<!-- 			<activation> -->
+<!-- 				<activeByDefault>true</activeByDefault> -->
+<!-- 			</activation> -->
+<!-- 			<dependencies> -->
+<!-- 				<dependency> -->
+<!-- 					<groupId>org.jboss.arquillian.container</groupId> -->
+<!-- 					<artifactId>arquillian-glassfish-remote-3.1</artifactId> -->
+<!-- 					<version>1.0.0.CR4</version> -->
+<!-- 					<scope>test</scope> -->
+<!-- 				</dependency> -->
+<!-- 			</dependencies> -->
+<!-- 			<build> -->
+<!-- 				<plugins> -->
+<!-- 					<plugin> -->
+<!-- 						<groupId>org.codehaus.cargo</groupId> -->
+<!-- 						<artifactId>cargo-maven2-plugin</artifactId> -->
+<!-- 						<version>1.4.14</version> -->
+<!-- 						<configuration> -->
+<!-- 							<container> -->
+<!-- 								<containerId>glassfish4x</containerId> -->
+<!-- 								<zipUrlInstaller> -->
+<!-- 									<url>http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip</url> -->
+<!-- 								</zipUrlInstaller> -->
+<!-- 							</container> -->
+<!-- 							<properties> -->
+<!-- 								<context>cargo-tracker</context> -->
+<!-- 							</properties> -->
+<!-- 						</configuration> -->
+<!-- 					</plugin> -->
+<!-- 				</plugins> -->
+<!-- 			</build> -->
+		</profile>
+
+		<!-- WebLogic Profile -->
+		<profile>
+			<id>weblogic</id>
+		</profile>
+
+
 	</profiles>
 </project>
